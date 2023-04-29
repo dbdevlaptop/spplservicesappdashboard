@@ -55,6 +55,11 @@ export default function Sidebar() {
             }
             {
               userRoleValue === "main-admin" ?
+                <li className="list-group-item"><NavLink to={"/admin/user-record"}><AiOutlineUserAdd /> User Record</NavLink></li>
+                : null
+            }
+            {
+              userRoleValue === "main-admin" ?
                 <li className="list-group-item"><NavLink to={"/admin/payment"}><MdPayment /> Payment</NavLink></li>
                 : null
             }
